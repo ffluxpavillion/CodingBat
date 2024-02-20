@@ -8,6 +8,6 @@
 // frontTimes('Abc', 3) → AbcAbcAbc
 
 function frontTimes(str, n){
-  let front = str.length < 3 ? str : str.substring(0, 3];
+  let front = str.length < 3 ? str : str.substring(0, 3);
   return front.repeat(n)
 }
