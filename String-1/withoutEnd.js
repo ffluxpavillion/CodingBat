@@ -9,6 +9,5 @@
 // withoutEnd('coding') → odin
 
 function withoutEnd(str){
-
-  return str.substring(1, str.length - 1)
+  return str.substring(1, str.length - 1);
 }
