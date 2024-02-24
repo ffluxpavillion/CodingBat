@@ -9,5 +9,5 @@
 // right2('Hi') → Hi
 
 function right2(str){
-  return str.slice(-2) + str.slice(0,-2)
+  return str.slice(-2) + str.slice(0,-2);
 }
