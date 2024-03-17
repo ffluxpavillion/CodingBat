@@ -9,9 +9,9 @@
 // roundSum(6, 4, 4) → 10
 
 function roundSum(a, b, c) {
-  function round10(num) {
-    return Math.round(num / 10) * 10;
-  }
-
   return round10(a) + round10(b) + round10(c);
+}
+
+function round10(num) {
+  return Math.round(num / 10) * 10;
 }
