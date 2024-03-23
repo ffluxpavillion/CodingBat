@@ -17,5 +17,5 @@ function fizzArray2(n){
     currentNum++;
   }
 
-  return strArray
+  return strArray;
 }
