@@ -9,14 +9,13 @@
 // fix34([3, 2, 2, 4]) → 3,4,2,2
 
 function fix34(nums){
-  let lastFourIndex = -1;
-
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === 3) {
-      for (let j = lastFourIndex + 1; j < nums.length; j++) {
-        if (nums[j] === 4 && (j === 0 || nums[j - 1] !== 3)) {
-          [nums[i + 1], nums[j]] = [nums[j], nums[i + 1]];
-          lastFourIndex = j;
+      for (let j = 0; j < nums.length; j++) {
+        if (nums[j] === 4 && nums[j - 1] !== 3) {
+          let temp = nums[i + 1];
+          nums[i + 1] = 4;
+          nums[j] = temp;
           break;
         }
       }
