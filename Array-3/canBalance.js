@@ -22,7 +22,7 @@ function canBalance(nums){
     }
 
     if (leftSum === rightSum) {
-      return true
+      return true;
     }
   }
 
